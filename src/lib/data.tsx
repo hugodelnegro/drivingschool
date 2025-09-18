@@ -1,59 +1,89 @@
 export const quizData: Q[] = [
-  {
-    question: 'What does this sign mean?',
-    answers: ['Yield to oncoming traffic', 'Come to a complete stop', 'Slow down and proceed with caution', 'No entry allowed'],
+   {
+    question: "Sie nähern sich einem Kreisverkehr. Ein Radfahrer fährt bereits im Kreisverkehr. Wie verhalten Sie sich?",
+    answers: [
+      "Ich fahre langsam ein, da Radfahrer im Kreisverkehr immer Vorfahrt gewähren müssen.",
+      "Ich warte, bis der Radfahrer vorbeigefahren ist, bevor ich einfahre.",
+      "Ich hupe, um den Radfahrer auf mich aufmerksam zu machen.",
+      "Ich fahre zügig hinein, um den Verkehrsfluss nicht zu behindern."
+    ],
     correctAnswer: 2,
-    explanation: 'The stop sign requires drivers to come to a complete stop before proceeding.',
-    okMsg: 'Correct! A stop sign means you must come to a complete stop.',
-    koMsg: 'Incorrect. A stop sign means you must come to a complete stop.',
-    type: 'single',
-    point: 20,
-    photo: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=400&h=300&fit=crop&crop=center',
+    explanation:
+      "Im Kreisverkehr haben Fahrzeuge und Radfahrer, die sich bereits darin befinden, Vorfahrt. Sie dürfen erst einfahren, wenn die Fahrbahn frei ist.",
+    okMsg: "Richtig! Radfahrer im Kreisverkehr haben Vorfahrt.",
+    koMsg: "Falsch. Sie müssen den Radfahrer durchfahren lassen.",
+    type: "single",
+    point: 2,
+    photo: "/images/fahrrad-im-kreisverkehr.jpg"
   },
   {
-    question: 'At this four-way intersection with no traffic signals, who has the right of way?',
-    answers: ['The vehicle that arrives first', 'The vehicle on your right (if you arrive at the same time)', 'Vehicles going straight', 'The largest vehicle'],
-    correctAnswer: [1, 2],
-    explanation: 'At uncontrolled intersections, the first vehicle to arrive has the right of way. If vehicles arrive simultaneously, yield to the vehicle on your right.',
-    okMsg: 'Correct! First to arrive, or yield to the right if at the same time.',
-    koMsg: 'Incorrect. First to arrive, or yield to the right if at the same time.',
-    type: 'multiple',
-    point: 20,
-    photo: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=300&fit=crop&crop=center',
-  },
-  {
-    question: 'What is the maximum speed you should drive in this area?',
-    answers: ['30 mph', '35 mph', '40 mph', '45 mph'],
-    correctAnswer: 2,
-    explanation: 'Always follow the posted speed limit signs.',
-    okMsg: 'Correct! The speed limit shown is 35 mph.',
-    koMsg: 'Incorrect. The speed limit shown is 35 mph.',
-    type: 'single',
-    point: 20,
-    photo: 'https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=400&h=300&fit=crop&crop=center',
-  },
-  {
-    question: 'When parallel parking, what should you do first?',
-    answers: ['Signal your intention and check mirrors', 'Start backing up immediately', 'Turn the steering wheel fully to the right', 'Pull alongside the front car'],
+    question: "Ein Fußgänger steht sichtbar am Zebrastreifen und möchte die Straße überqueren. Wie reagieren Sie?",
+    answers: [
+      "Ich bremse ab und halte an, um den Fußgänger passieren zu lassen.",
+      "Ich fahre weiter, solange der Fußgänger noch nicht auf der Fahrbahn ist.",
+      "Ich blinke links und umfahre den Fußgänger.",
+      "Ich hupe, um den Fußgänger zu warnen."
+    ],
     correctAnswer: 1,
-    explanation: 'Safety first—always signal your intentions and check your surroundings before parking.',
-    okMsg: 'Correct! Always signal and check mirrors before beginning any parking maneuver.',
-    koMsg: 'Incorrect. Always signal and check mirrors before beginning any parking maneuver.',
-    type: 'single',
-    point: 20,
-    photo: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop&crop=center',
+    explanation:
+      "An Fußgängerüberwegen (Zebrastreifen) gilt: Fußgänger haben Vorrang. Sie müssen rechtzeitig bremsen und anhalten.",
+    okMsg: "Richtig! Fußgänger am Zebrastreifen haben Vorrang.",
+    koMsg: "Falsch. Sie müssen den Fußgänger passieren lassen.",
+    type: "single",
+    point: 2,
+    photo: "/images/moto.png"
   },
   {
-    question: 'When you see this sign, you should:',
-    answers: ['Come to a complete stop', 'Slow down and yield to other traffic', 'Maintain your current speed', 'Honk your horn to alert other drivers'],
-    correctAnswer: 2,
-    explanation: 'The yield sign requires you to slow down and give the right of way to other traffic and pedestrians.',
-    okMsg: 'Correct! Slow down and yield the right of way to other traffic.',
-    koMsg: 'Incorrect. Slow down and yield the right of way to other traffic.',
-    type: 'single',
-    point: 20,
-    photo: 'https://images.unsplash.com/photo-1630481854400-ad2ae26bd0bd?w=400&h=300&fit=crop&crop=center',
+    question: "Sie fahren auf die Autobahn auf. Worauf müssen Sie besonders achten?",
+    answers: [
+      "Ich beschleunige kräftig, um mich dem fließenden Verkehr anzupassen.",
+      "Ich bleibe langsam und warte, bis jemand Platz macht.",
+      "Ich halte notfalls am Ende des Beschleunigungsstreifens an.",
+      "Ich fahre rückwärts, wenn ich die Ausfahrt verpasst habe."
+    ],
+    correctAnswer: 1,
+    explanation:
+      "Beim Auffahren auf die Autobahn müssen Sie den Verkehr beobachten und Ihre Geschwindigkeit anpassen. Anhalten oder Rückwärtsfahren ist verboten.",
+    okMsg: "Richtig! Sie müssen beschleunigen und sich einordnen.",
+    koMsg: "Falsch. Sie müssen sich zügig und sicher einordnen.",
+    type: "single",
+    point: 3,
+    photo: "/images/A2ost.jpg"
   },
+  {
+    question: "Sie stehen an einer Kreuzung ohne Ampel. Von rechts kommt ein Pkw, von links ein Fahrrad. Wer hat Vorfahrt?",
+    answers: [
+      "Ich fahre zuerst, da ich auf der Hauptstraße bin.",
+      "Der Pkw von rechts fährt zuerst.",
+      "Der Radfahrer von links fährt zuerst.",
+      "Alle müssen gleichzeitig bremsen und sich verständigen."
+    ],
+    correctAnswer: 2,
+    explanation:
+      "An Kreuzungen ohne Ampeln oder Schilder gilt die Rechts-vor-Links-Regel. Der Pkw von rechts hat Vorfahrt.",
+    okMsg: "Richtig! Rechts-vor-Links beachten.",
+    koMsg: "Falsch. Fahrzeuge von rechts haben Vorrang.",
+    type: "single",
+    point: 2,
+    photo: "/images/images.png"
+  },
+  {
+    question: "Welche Verhaltensweisen sind beim Fahren mit dem Handy verboten?",
+    answers: [
+      "Telefonieren ohne Freisprechanlage während der Fahrt",
+      "Tippen von Nachrichten während der Fahrt",
+      "Navigation am Handy halten während der Fahrt",
+      "Sprachsteuerung über Freisprechanlage"
+    ],
+    correctAnswer: [1, 2, 3],
+    explanation:
+      "Das Handy darf beim Fahren nicht in der Hand gehalten werden. Erlaubt sind nur Freisprechanlage und Sprachsteuerung.",
+    okMsg: "Richtig! Handybenutzung ohne Freisprechanlage ist verboten.",
+    koMsg: "Falsch. Nur Freisprechanlage oder Sprachsteuerung sind erlaubt.",
+    type: "multiple",
+    point: 3,
+    photo: "/images/handy.jpg"
+  }
 ];
 
 export type Q = {
