@@ -60,7 +60,10 @@ const json = useMemo(() => {
                   type: 'html',
                   name: `${name}__photo`,
                   html: `
-                    <div style="text-align:center;margin-bottom:16px;">
+                    <div style="text-align:center;margin-bottom:16px;display:flex;
+    justify-content:center;  /* centers horizontally */
+    background-color: black;
+    align-items:center;">
                       <img src="${q.photo}" alt="Question image"
                            style="max-width:100%;max-height:300px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);" />
                     </div>
@@ -86,7 +89,7 @@ const json = useMemo(() => {
             name: `${name}__fb`,
             visible: false,
             html: `
-              <div data-fb-wrapper style="margin-top:10px">
+              <div data-fb-wrapper style="margin-top:10px; color:#fff; background-color:#374151; padding:12px; border-radius:8px;">
                 <!-- dynamic message injected on submit -->
               </div>
             `,
@@ -148,7 +151,7 @@ const onNextAsSubmit = (sender: Model, options: any) => {
   // Write feedback HTML (message + Continue button)
   const contBtnId = `${q.name}__continue`;
   fb.html = `
-    <div data-fb-wrapper style="margin-top:10px">
+    <div data-fb-wrapper style="margin-top:10px; color:#fff; background-color:#374151; padding:12px; border-radius:8px;">
       ${
         ok
           ? `✅ ${meta.okMsg}`
@@ -267,7 +270,7 @@ const onNextAsSubmit = (sender: Model, options: any) => {
   }, [model, onComplete]);
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg">
+    <div className="max-w-4xl mx-auto p-6 rounded-lg shadow-lg border-2 border-white">
       <Survey model={model} />
     </div>
   );

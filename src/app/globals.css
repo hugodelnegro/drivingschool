@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+      --background: #0a0a0a;
+    --foreground: #c7c7c7;
 }
 
 @theme inline {
@@ -12,15 +12,56 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.sd-navigation {
+  display: flex;
+  justify-content: center;
+}
+
+/* Style the NEXT button specifically */
+#sv-nav-next .sd-navigation__next-btn {
+  background: #a70101;           /* black background */
+  color: #fff;                /* white text */
+  border: 0;
+  border-radius: 4px;      /* pill shape */
+  padding: 10px 20px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0,0,0,.25);
+  transition: transform .08s ease, background-color .2s ease, box-shadow .2s ease;
+}
+
+#sv-nav-next .sd-navigation__next-btn:hover {
+  background: #740000;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0,0,0,.3);
+}
+
+#sv-nav-next .sd-navigation__next-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(0,0,0,.2);
+}
+
+#sv-nav-next .sd-navigation__next-btn:focus-visible {
+  outline: 3px solid #facc15; /* accessible focus ring */
+  outline-offset: 2px;
+}
+
+#sv-nav-next .sd-navigation__next-btn:disabled {
+  background: #4b5563;        /* gray */
+  color: #e5e7eb;
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: .7;
+}
+
+.sv-components-column--expandable {
+  background: #000 !important;
+  color: #fff;
 }
