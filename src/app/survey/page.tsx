@@ -6,13 +6,11 @@ export default function SurveyPage() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-gray-200 mb-4">
-            Student Survey
+            Theorieprüfung der Klasse B
           </h1>
           <p className="text-lg text-gray-100 max-w-2xl mx-auto">
-            Help us provide you with the best driving instruction experience.
-            Please take a few minutes to complete this survey so we can tailor
-            our services to your needs.
-          </p>
+             Die Theorieprüfung Klasse B testet Ihr Wissen über Verkehrsregeln, Verkehrszeichen und sicheres Verhalten im Straßenverkehr.         
+             </p>
         </div>
         <DrivingSchoolSurvey />
       </div>
